@@ -1,5 +1,68 @@
 [
   {
+    "objectID": "datas.html",
+    "href": "datas.html",
+    "title": "데이터셋",
+    "section": "",
+    "text": "이 페이지에서는 제가 직접 데이터마이닝을 통해 정제하고 분석한 최종 데이터프레임을 공유합니다. 각 항목에 대한 설명을 읽고 필요한 데이터를 다운로드할 수 있습니다.\n\n\n\n\n\n\n\n\n\n데이터셋 이름\n설명\n다운로드\n\n\n\n\n2025년 특허 무효심판\n2025년 한 해 동안의 특허 무효심판 데이터를 수집하고 정제한 자료입니다. 심결일, 특허 종류, 대리인 정보 등을 포함합니다.\n .csv\n\n\n2024년 특허 무효심판\n(준비 중) 2024년 데이터셋입니다.\n준비 중\n\n\n향후 추가될 데이터\n(준비 중) 다른 종류의 심판 데이터나 추가적인 변수를 포함할 예정입니다.\n준비 중"
+  },
+  {
+    "objectID": "datas.html#분석-결과-데이터셋",
+    "href": "datas.html#분석-결과-데이터셋",
+    "title": "데이터셋",
+    "section": "",
+    "text": "이 페이지에서는 제가 직접 데이터마이닝을 통해 정제하고 분석한 최종 데이터프레임을 공유합니다. 각 항목에 대한 설명을 읽고 필요한 데이터를 다운로드할 수 있습니다.\n\n\n\n\n\n\n\n\n\n데이터셋 이름\n설명\n다운로드\n\n\n\n\n2025년 특허 무효심판\n2025년 한 해 동안의 특허 무효심판 데이터를 수집하고 정제한 자료입니다. 심결일, 특허 종류, 대리인 정보 등을 포함합니다.\n .csv\n\n\n2024년 특허 무효심판\n(준비 중) 2024년 데이터셋입니다.\n준비 중\n\n\n향후 추가될 데이터\n(준비 중) 다른 종류의 심판 데이터나 추가적인 변수를 포함할 예정입니다.\n준비 중"
+  },
+  {
+    "objectID": "my_first_project.html",
+    "href": "my_first_project.html",
+    "title": "시험용",
+    "section": "",
+    "text": "이 프로젝트는 서울시 공공자전거 ’따릉이’의 시간대별 수요를 예측하는 모델을 만드는 것을 목표로 합니다. 분석을 통해 효율적인 자전거 재배치 전략을 제안하고자 합니다."
+  },
+  {
+    "objectID": "my_first_project.html#프로젝트-개요",
+    "href": "my_first_project.html#프로젝트-개요",
+    "title": "시험용",
+    "section": "",
+    "text": "이 프로젝트는 서울시 공공자전거 ’따릉이’의 시간대별 수요를 예측하는 모델을 만드는 것을 목표로 합니다. 분석을 통해 효율적인 자전거 재배치 전략을 제안하고자 합니다."
+  },
+  {
+    "objectID": "my_first_project.html#데이터-탐색-eda",
+    "href": "my_first_project.html#데이터-탐색-eda",
+    "title": "시험용",
+    "section": "2. 데이터 탐색 (EDA)",
+    "text": "2. 데이터 탐색 (EDA)\n먼저, 데이터의 분포와 변수 간 관계를 시각적으로 탐색했습니다. 아래는 시간대별 평균 대여량을 보여주는 그래프입니다. 출퇴근 시간에 수요가 가장 높은 것을 확인할 수 있습니다.\n\nimport matplotlib.pyplot as plt\nfrom sklearn import datasets\nimport numpy as np\n\n# Iris: 산점도 (꽃받침 길이 vs 너비)\niris = datasets.load_iris()\nX = iris.data[:, :2]   # sepal length, sepal width\ny = iris.target\n\nplt.figure()\nfor c in np.unique(y):\n    plt.scatter(X[y == c, 0], X[y == c, 1], label=iris.target_names[c], s=30)\nplt.xlabel(\"Sepal length\")\nplt.ylabel(\"Sepal width\")\nplt.title(\"Iris — Sepal length vs width\")\nplt.legend()\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "시험용\n\n\n\nPython\n\nPandas\n\nScikit-learn\n\nEDA\n\n\n\n\n\n\n\n이성재\n\n\nSep 26, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "LEE SEONG JAE",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n핵심적인 데이터 분석 및 머신러닝 프로젝트입니다.\n\n\n\n서울시 공공자전거 ’따릉이’의 시간대별 수요를 예측하는 머신러닝 모델을 개발하여 효율적인 자전거 재배치 전략을 제안합니다.\n자세히 보기 →\n\n\n\n\n이곳에 두 번째 핵심 프로젝트에 대한 간략한 설명을 추가하세요. 고객 행동 분석, 매출 예측 등 매력적인 주제를 선정하는 것이 좋습니다.\n\n\nSkills & Tools\n데이터 분석을 위해 아래와 같은 기술 스택을 활용합니다.\n\n\nLanguages  Python, R, SQL\n\n\nLibraries & Frameworks  Pandas, Scikit-learn, PyTorch, Tidyverse\n\n\nVisualization & BI  Matplotlib, Seaborn, Tableau\n\n\n\n\n\nConnect"
+  },
+  {
+    "objectID": "index.html#skills-tools",
+    "href": "index.html#skills-tools",
+    "title": "LEE SEONG JAE",
+    "section": "Skills & Tools",
+    "text": "Skills & Tools\n데이터 분석을 위해 아래와 같은 기술 스택을 활용합니다.\n\n\nLanguages  Python, R, SQL\n\n\nLibraries & Frameworks  Pandas, Scikit-learn, PyTorch, Tidyverse\n\n\nVisualization & BI  Matplotlib, Seaborn, Tableau"
+  },
+  {
+    "objectID": "index.html#connect",
+    "href": "index.html#connect",
+    "title": "LEE SEONG JAE",
+    "section": "Connect",
+    "text": "Connect"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
@@ -12,40 +75,5 @@
     "title": "About Me",
     "section": "",
     "text": "저는 데이터를 통해 문제 해결의 실마리를 찾는 것을 좋아합니다. 특히 ~ 분야에 관심이 많으며, Python, R, SQL을 능숙하게 다룹니다.\n\n\n\nLanguages: Python, R, SQL\nTools: Tableau, Git, Docker\nLibraries: Pandas, Scikit-learn, Tidyverse"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "my-portfolio",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "서울시 자전거 ‘따릉이’ 수요 예측 분석\n\n\n\nPython\n\nPandas\n\nScikit-learn\n\nEDA\n\n\n\n\n\n\n\nOOO\n\n\nSep 26, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "my_first_project.html",
-    "href": "my_first_project.html",
-    "title": "서울시 자전거 ‘따릉이’ 수요 예측 분석",
-    "section": "",
-    "text": "이 프로젝트는 서울시 공공자전거 ’따릉이’의 시간대별 수요를 예측하는 모델을 만드는 것을 목표로 합니다. 분석을 통해 효율적인 자전거 재배치 전략을 제안하고자 합니다."
-  },
-  {
-    "objectID": "my_first_project.html#프로젝트-개요",
-    "href": "my_first_project.html#프로젝트-개요",
-    "title": "서울시 자전거 ‘따릉이’ 수요 예측 분석",
-    "section": "",
-    "text": "이 프로젝트는 서울시 공공자전거 ’따릉이’의 시간대별 수요를 예측하는 모델을 만드는 것을 목표로 합니다. 분석을 통해 효율적인 자전거 재배치 전략을 제안하고자 합니다."
-  },
-  {
-    "objectID": "my_first_project.html#데이터-탐색-eda",
-    "href": "my_first_project.html#데이터-탐색-eda",
-    "title": "서울시 자전거 ‘따릉이’ 수요 예측 분석",
-    "section": "2. 데이터 탐색 (EDA)",
-    "text": "2. 데이터 탐색 (EDA)\n먼저, 데이터의 분포와 변수 간 관계를 시각적으로 탐색했습니다. 아래는 시간대별 평균 대여량을 보여주는 그래프입니다. 출퇴근 시간에 수요가 가장 높은 것을 확인할 수 있습니다.\n\nimport matplotlib.pyplot as plt\nfrom sklearn import datasets\nimport numpy as np\n\n# Iris: 산점도 (꽃받침 길이 vs 너비)\niris = datasets.load_iris()\nX = iris.data[:, :2]   # sepal length, sepal width\ny = iris.target\n\nplt.figure()\nfor c in np.unique(y):\n    plt.scatter(X[y == c, 0], X[y == c, 1], label=iris.target_names[c], s=30)\nplt.xlabel(\"Sepal length\")\nplt.ylabel(\"Sepal width\")\nplt.title(\"Iris — Sepal length vs width\")\nplt.legend()\nplt.tight_layout()\nplt.show()"
   }
 ]
