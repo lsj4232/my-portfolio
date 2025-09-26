@@ -1,0 +1,10 @@
+---
+title: "Projects"
+listing:
+  contents: 
+    - "my_first_project.qmd"
+    # - "another_project.qmd" # ◀︎ 나중에 다른 프로젝트 추가 시
+  type: grid # 카드 형태 (default, grid, table 중 선택)
+  sort: "date desc"
+  categories: true
+---

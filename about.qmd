@@ -1,0 +1,27 @@
+---
+title: "About Me"
+image: face.jpeg # ◀︎ 내 프로필 사진 파일 이름
+about:
+  template: jolla # ◀︎ 소개 페이지 레이아웃 스타일
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/%EC%84%B1%EC%9E%AC-%EC%9D%B4-5b7a12375/
+    - icon: github
+      text: Github
+      href: https://github.com/lsj4232
+    - icon: envelope
+      text: Email
+      href: "mailto:seongjae24@gmail.com"
+---
+
+## 안녕하세요, 데이터 분석가 이성재입니다.
+
+저는 데이터를 통해 문제 해결의 실마리를 찾는 것을 좋아합니다.
+특히 ~ 분야에 관심이 많으며, Python, R, SQL을 능숙하게 다룹니다.
+
+### Skills
+
+- **Languages:** Python, R, SQL
+- **Tools:** Tableau, Git, Docker
+- **Libraries:** Pandas, Scikit-learn, Tidyverse
