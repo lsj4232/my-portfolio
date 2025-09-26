@@ -12,13 +12,15 @@ website:
         text: About
       - href: projects.qmd
         text: projects
+      - href: datas.qmd
+        text: Patents Datas
 
   page-footer: "Copyright 2025, LEE SEONG JAE"
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      - lux
+      - balenciaga-theme.scss
     css: styles.css
     toc: true

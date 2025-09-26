@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About Me – seong-jae’s Portfolio</title>
+<title>데이터셋 – seong-jae’s Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,6 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-cca31f3d03caadc24c701c913c89405d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -96,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -104,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./datas.html"> 
+    <a class="nav-link active" href="./datas.html" aria-current="page"> 
 <span class="menu-text">Patents Datas</span></a>
   </li>  
 </ul>
@@ -121,60 +122,83 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#안녕하세요-데이터-분석가-이성재입니다." id="toc-안녕하세요-데이터-분석가-이성재입니다." class="nav-link active" data-scroll-target="#안녕하세요-데이터-분석가-이성재입니다.">안녕하세요, 데이터 분석가 이성재입니다.</a>
-  <ul class="collapse">
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
-  </ul></li>
+  <li><a href="#분석-결과-데이터셋" id="toc-분석-결과-데이터셋" class="nav-link active" data-scroll-target="#분석-결과-데이터셋">분석 결과 데이터셋</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="face.jpeg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About Me</h1>
+<h1 class="title">데이터셋</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
-</header><main class="content" id="quarto-document-content">
+  
 
-<section id="안녕하세요-데이터-분석가-이성재입니다." class="level2">
-<h2 data-anchor-id="안녕하세요-데이터-분석가-이성재입니다.">안녕하세요, 데이터 분석가 이성재입니다.</h2>
-<p>저는 데이터를 통해 문제 해결의 실마리를 찾는 것을 좋아합니다. 특히 ~ 분야에 관심이 많으며, Python, R, SQL을 능숙하게 다룹니다.</p>
-<section id="skills" class="level3">
-<h3 data-anchor-id="skills">Skills</h3>
-<ul>
-<li><strong>Languages:</strong> Python, R, SQL</li>
-<li><strong>Tools:</strong> Tableau, Git, Docker</li>
-<li><strong>Libraries:</strong> Pandas, Scikit-learn, Tidyverse</li>
-</ul>
+
+</header>
+
+
+<section id="분석-결과-데이터셋" class="level2">
+<h2 class="anchored" data-anchor-id="분석-결과-데이터셋">분석 결과 데이터셋</h2>
+<p>이 페이지에서는 제가 직접 데이터마이닝을 통해 정제하고 분석한 최종 데이터프레임을 공유합니다. 각 항목에 대한 설명을 읽고 필요한 데이터를 다운로드할 수 있습니다.</p>
+<p><br></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">데이터셋 이름</th>
+<th style="text-align: left;">설명</th>
+<th style="text-align: left;">다운로드</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>2025년 특허 무효심판</strong></td>
+<td style="text-align: left;">2025년 한 해 동안의 특허 무효심판 데이터를 수집하고 정제한 자료입니다. 심결일, 특허 종류, 대리인 정보 등을 포함합니다.</td>
+<td style="text-align: left;"><a href="2025_trial.csv" class="btn btn-sm btn-primary" role="button" download="2025_무효심판.csv"><i class="bi bi-download"></i> .csv</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2024년 특허 무효심판</strong></td>
+<td style="text-align: left;">(준비 중) 2024년 데이터셋입니다.</td>
+<td style="text-align: left;"><button class="btn btn-sm btn-secondary" disabled="">준비 중</button></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>향후 추가될 데이터</strong></td>
+<td style="text-align: left;">(준비 중) 다른 종류의 심판 데이터나 추가적인 변수를 포함할 예정입니다.</td>
+<td style="text-align: left;"><button class="btn btn-sm btn-secondary" disabled="">준비 중</button></td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
-</section>
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://www.linkedin.com/in/%EC%84%B1%EC%9E%AC-%EC%9D%B4-5b7a12375/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/lsj4232" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="mailto:seongjae24@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

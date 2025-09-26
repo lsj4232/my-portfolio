@@ -1,9 +1,9 @@
 ---
-title: "서울시 자전거 '따릉이' 수요 예측 분석"
-author: "OOO"
+title: "시험용"
+author: "이성재"
 date: "2025-09-26"
 categories: [Python, Pandas, Scikit-learn, EDA]
-image: "ddareungi.jpg" # 프로젝트 대표 이미지
+image: "Figure_1.png" # 프로젝트 대표 이미지
 ---
 
 ## 1. 프로젝트 개요

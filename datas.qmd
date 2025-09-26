@@ -1,0 +1,17 @@
+---
+title: "데이터셋"
+format: html
+---
+
+## 분석 결과 데이터셋
+
+이 페이지에서는 제가 직접 데이터마이닝을 통해 정제하고 분석한 최종 데이터프레임을 공유합니다.
+각 항목에 대한 설명을 읽고 필요한 데이터를 다운로드할 수 있습니다.
+
+<br>
+
+| 데이터셋 이름 | 설명 | 다운로드 |
+| :--- | :--- | :--- |
+| **2025년 특허 무효심판** | 2025년 한 해 동안의 특허 무효심판 데이터를 수집하고 정제한 자료입니다. 심결일, 특허 종류, 대리인 정보 등을 포함합니다. | <a href="2025_trial.csv" class="btn btn-sm btn-primary" role="button" download="2025_무효심판.csv"><i class="bi bi-download"></i> .csv</a> |
+| **2024년 특허 무효심판** | (준비 중) 2024년 데이터셋입니다. | <button class="btn btn-sm btn-secondary" disabled>준비 중</button> |
+| **향후 추가될 데이터** | (준비 중) 다른 종류의 심판 데이터나 추가적인 변수를 포함할 예정입니다. | <button class="btn btn-sm btn-secondary" disabled>준비 중</button> |

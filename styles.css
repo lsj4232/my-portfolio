@@ -1,1 +1,13 @@
 /* css styles */
+/* 특정 요소의 여백 조정 */
+.quarto-title-block.r-stack {
+    padding-bottom: 50px; /* 제목 블록 아래 여백 늘리기 */
+  }
+  
+  /* 폰트를 아주 얇게 강조하고 싶을 때 */
+  .custom-thin-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300; /* Inter Light */
+    letter-spacing: 0.1em; /* 글자 간 간격 넓히기 */
+    text-transform: uppercase;
+  }
