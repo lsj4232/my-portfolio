@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/thoughts.html",
+    "items": [
+      "/paper_review1.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/24paper.html",

@@ -14,18 +14,60 @@
     "text": "이 페이지에서는 제가 직접 데이터마이닝을 통해 정제하고 분석한 최종 데이터프레임을 공유합니다. 각 항목에 대한 설명을 읽고 필요한 데이터를 다운로드할 수 있습니다.\n\n\n\n\n\n\n\n\n\n데이터셋 이름\n설명\n다운로드\n\n\n\n\n2025년 특허 무효심판\n2025년 한 해 동안의 특허 무효심판 데이터를 수집하고 정제한 자료입니다. 심결일, 특허 종류, 대리인 정보 등을 포함합니다.\n .csv\n\n\n2024년 특허 무효심판\n(준비 중) 2024년 데이터셋입니다.\n준비 중\n\n\n향후 추가될 데이터\n(준비 중) 다른 종류의 심판 데이터나 추가적인 변수를 포함할 예정입니다.\n준비 중"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
+    "objectID": "thoughts.html",
+    "href": "thoughts.html",
+    "title": "Thoughts",
     "section": "",
-    "text": "DATA - DRIVEN\nAI - POWERED\nPRESCION - ENGINEERED\n\n\n\n\nLanguages: Python, R, SQL\nTools: Tableau, Git, Docker\nLibraries: Pandas, Scikit-learn, Tidyverse"
+    "text": "논문 리뷰: THE VALUATION OF PATENTS\n\n\n\n가치평가\n\n특허\n\n실물옵션\n\n\n\n특허 가치 평가에 대한 실물 옵션 접근법을 다룬 논문을 리뷰하고, 블랙-숄즈 모형 적용의 가능성과 한계를 살펴봅니다.\n\n\n\n이성재\n\n\nSep 28, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "about.html#안녕하세요-특허-가치-평가를-설계하는-이성재입니다.",
-    "href": "about.html#안녕하세요-특허-가치-평가를-설계하는-이성재입니다.",
-    "title": "About Me",
+    "objectID": "my_first_project.html",
+    "href": "my_first_project.html",
+    "title": "시험용",
     "section": "",
-    "text": "DATA - DRIVEN\nAI - POWERED\nPRESCION - ENGINEERED\n\n\n\n\nLanguages: Python, R, SQL\nTools: Tableau, Git, Docker\nLibraries: Pandas, Scikit-learn, Tidyverse"
+    "text": "이 프로젝트는 서울시 공공자전거 ’따릉이’의 시간대별 수요를 예측하는 모델을 만드는 것을 목표로 합니다. 분석을 통해 효율적인 자전거 재배치 전략을 제안하고자 합니다."
+  },
+  {
+    "objectID": "my_first_project.html#프로젝트-개요",
+    "href": "my_first_project.html#프로젝트-개요",
+    "title": "시험용",
+    "section": "",
+    "text": "이 프로젝트는 서울시 공공자전거 ’따릉이’의 시간대별 수요를 예측하는 모델을 만드는 것을 목표로 합니다. 분석을 통해 효율적인 자전거 재배치 전략을 제안하고자 합니다."
+  },
+  {
+    "objectID": "my_first_project.html#데이터-탐색-eda",
+    "href": "my_first_project.html#데이터-탐색-eda",
+    "title": "시험용",
+    "section": "2. 데이터 탐색 (EDA)",
+    "text": "2. 데이터 탐색 (EDA)\n먼저, 데이터의 분포와 변수 간 관계를 시각적으로 탐색했습니다. 아래는 시간대별 평균 대여량을 보여주는 그래프입니다. 출퇴근 시간에 수요가 가장 높은 것을 확인할 수 있습니다.\n\nimport matplotlib.pyplot as plt\nfrom sklearn import datasets\nimport numpy as np\n\n# Iris: 산점도 (꽃받침 길이 vs 너비)\niris = datasets.load_iris()\nX = iris.data[:, :2]   # sepal length, sepal width\ny = iris.target\n\nplt.figure()\nfor c in np.unique(y):\n    plt.scatter(X[y == c, 0], X[y == c, 1], label=iris.target_names[c], s=30)\nplt.xlabel(\"Sepal length\")\nplt.ylabel(\"Sepal width\")\nplt.title(\"Iris — Sepal length vs width\")\nplt.legend()\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "우리 대법원의 특허법 해석론에 대한 검토\n\n\n\n지식재산논문공모\n\n법해석론\n\n\n\n\n\n\n\n이성재\n\n\n\n\n\n\n\n\n\n\n\n\n\n시험용\n\n\n\nPython\n\nPandas\n\nScikit-learn\n\nEDA\n\n\n\n\n\n\n\n이성재\n\n\nSep 26, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "paper_review1.html",
+    "href": "paper_review1.html",
+    "title": "논문 리뷰: THE VALUATION OF PATENTS",
+    "section": "",
+    "text": "THE VALUATION OF PATENTS - A review of patent valuation methods with consideration of option based methods and the potential for further research\n\n논문 다운로드"
+  },
+  {
+    "objectID": "paper_review1.html#논문-정보",
+    "href": "paper_review1.html#논문-정보",
+    "title": "논문 리뷰: THE VALUATION OF PATENTS",
+    "section": "",
+    "text": "THE VALUATION OF PATENTS - A review of patent valuation methods with consideration of option based methods and the potential for further research\n\n논문 다운로드"
+  },
+  {
+    "objectID": "paper_review1.html#짧은-생각",
+    "href": "paper_review1.html#짧은-생각",
+    "title": "논문 리뷰: THE VALUATION OF PATENTS",
+    "section": "짧은 생각",
+    "text": "짧은 생각\n전통적인 가치평가 방법은 특허의 가치를 평가히기에 부족하다고 한다. 그 이유는, 경직성에 있다. 불확실성에 대응할 유연함이 부족하다는 이야기다.\n그래서 이러한 한계를 극복하기 위해, 이 논문은 다음과 같은 새로운 관점을 제안한다 .\n\n초기 특허권 취득 비용을 ‘옵션’으로, 후기 특허권의 후속 투자 및 상업화 비용을 ‘행사가격’으로 간주.\n\n흥미로운 이야기다. 옵션으로 보게 될 시 옵션가격 책정에 대한 대표적인 모형인 블랙 숄즈 모형을 활용해볼 수 있기 때문이다.\n하지만 저자가 지적하는 바와 같이,\n각 변수를 어떻게 대응할지가 정말 어려운 이야기인것 같다.\n\n\n블랙-숄즈 모형의 적용과 난제\n블랙 숄즈 모형에 등장하는 5가지 변수는\n현재 주가, 행사가격, 만기까지 남은 시간, 주가 수익률의 변동성, 무위험 이자율로 구성되는데\n\n\n\n블랙-숄즈 변수\n특허 가치평가 대입\n\n\n\n\n현재 주가 (\\(S\\))\n발명 사업화에 따른 이익의 현재 가치\n\n\n행사가격 (\\(K\\))\n후속 투자 및 상업화 비용\n\n\n만기까지 남은 시간 (\\(T\\))\n특허권 소멸시까지 남은 기간\n\n\n무위험 이자율 (\\(r\\))\n무위험 이자율\n\n\n주가 수익률의 변동성 (\\(\\sigma\\))\n?\n\n\n\n현재 주가를 발명 사업화에 따른 이익 행사 가격을 후속 투자 및 상업화 비용 만기까지 남은 시간을 특허권 소멸시까지 남은 시간 무위험 이자율 = 무위험 이자율 로 정의할 수 있겠으나\n주가 수익률의 변동성을 특허에 대해서는 어떻게 비유할지가 난제이다. 특허의 특성상 극소수의 특허만이 특출난 재정적 가치를 지니는 롱테일 분포를 이루기에, 주식에 그대로 대입하긴 어려운 사정들이 있다."
   },
   {
     "objectID": "index.html#featured-projects",
@@ -49,32 +91,18 @@
     "text": "Connect"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
     "section": "",
-    "text": "우리 대법원의 특허법 해석론에 대한 검토\n\n\n\n지식재산논문공모\n\n법해석론\n\n\n\n\n\n\n\n이성재\n\n\n\n\n\n\n\n\n\n\n\n\n\n시험용\n\n\n\nPython\n\nPandas\n\nScikit-learn\n\nEDA\n\n\n\n\n\n\n\n이성재\n\n\nSep 26, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "DATA - DRIVEN\nAI - POWERED\nPRESCION - ENGINEERED\n\n\n\n\nLanguages: Python, R, SQL\nTools: Tableau, Git, Docker\nLibraries: Pandas, Scikit-learn, Tidyverse"
   },
   {
-    "objectID": "my_first_project.html",
-    "href": "my_first_project.html",
-    "title": "시험용",
+    "objectID": "about.html#안녕하세요-특허-가치-평가를-설계하는-이성재입니다.",
+    "href": "about.html#안녕하세요-특허-가치-평가를-설계하는-이성재입니다.",
+    "title": "About Me",
     "section": "",
-    "text": "이 프로젝트는 서울시 공공자전거 ’따릉이’의 시간대별 수요를 예측하는 모델을 만드는 것을 목표로 합니다. 분석을 통해 효율적인 자전거 재배치 전략을 제안하고자 합니다."
-  },
-  {
-    "objectID": "my_first_project.html#프로젝트-개요",
-    "href": "my_first_project.html#프로젝트-개요",
-    "title": "시험용",
-    "section": "",
-    "text": "이 프로젝트는 서울시 공공자전거 ’따릉이’의 시간대별 수요를 예측하는 모델을 만드는 것을 목표로 합니다. 분석을 통해 효율적인 자전거 재배치 전략을 제안하고자 합니다."
-  },
-  {
-    "objectID": "my_first_project.html#데이터-탐색-eda",
-    "href": "my_first_project.html#데이터-탐색-eda",
-    "title": "시험용",
-    "section": "2. 데이터 탐색 (EDA)",
-    "text": "2. 데이터 탐색 (EDA)\n먼저, 데이터의 분포와 변수 간 관계를 시각적으로 탐색했습니다. 아래는 시간대별 평균 대여량을 보여주는 그래프입니다. 출퇴근 시간에 수요가 가장 높은 것을 확인할 수 있습니다.\n\nimport matplotlib.pyplot as plt\nfrom sklearn import datasets\nimport numpy as np\n\n# Iris: 산점도 (꽃받침 길이 vs 너비)\niris = datasets.load_iris()\nX = iris.data[:, :2]   # sepal length, sepal width\ny = iris.target\n\nplt.figure()\nfor c in np.unique(y):\n    plt.scatter(X[y == c, 0], X[y == c, 1], label=iris.target_names[c], s=30)\nplt.xlabel(\"Sepal length\")\nplt.ylabel(\"Sepal width\")\nplt.title(\"Iris — Sepal length vs width\")\nplt.legend()\nplt.tight_layout()\nplt.show()"
+    "text": "DATA - DRIVEN\nAI - POWERED\nPRESCION - ENGINEERED\n\n\n\n\nLanguages: Python, R, SQL\nTools: Tableau, Git, Docker\nLibraries: Pandas, Scikit-learn, Tidyverse"
   },
   {
     "objectID": "24paper.html",
