@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="이성재">
+<meta name="dcterms.date" content="2025-09-28">
+<meta name="description" content="특허 가치 평가에 대한 실물 옵션 접근법을 다룬 논문을 리뷰하고, 블랙-숄즈 모형 적용의 가능성과 한계를 살펴봅니다.">
 
-<title>LEE SEONG JAE – seong-jae’s Portfolio</title>
+<title>논문 리뷰: THE VALUATION OF PATENTS – seong-jae’s Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,14 +72,43 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -93,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -120,94 +152,131 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">LEE SEONG JAE</h1>
-            <p class="subtitle lead">Data Analyst Portfolio</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#precision-engineered-전세계의-출원된-특허-중-오직-극소수만이-300만달러-이상의-가치를-지니며-그외의-특허는-롱테일-분포에-위치해-사실상-죽은-특허와-다름-아닙니다.-정밀하게-설계된-특허데이터-분석으로-노이즈-속에서-진정한-가치를-모색합니다." id="toc-precision-engineered-전세계의-출원된-특허-중-오직-극소수만이-300만달러-이상의-가치를-지니며-그외의-특허는-롱테일-분포에-위치해-사실상-죽은-특허와-다름-아닙니다.-정밀하게-설계된-특허데이터-분석으로-노이즈-속에서-진정한-가치를-모색합니다." class="nav-link active" data-scroll-target="#precision-engineered-전세계의-출원된-특허-중-오직-극소수만이-300만달러-이상의-가치를-지니며-그외의-특허는-롱테일-분포에-위치해-사실상-죽은-특허와-다름-아닙니다.-정밀하게-설계된-특허데이터-분석으로-노이즈-속에서-진정한-가치를-모색합니다.">Precision-Engineered<br><br>전세계의 출원된 특허 중 오직 극소수만이 300만달러 이상의 가치를 지니며 그외의 특허는 롱테일 분포에 위치해 사실상 죽은 특허와 다름 아닙니다. <br><br>정밀하게 설계된 특허데이터 분석으로 노이즈 속에서 진정한 가치를 모색합니다.</a></li>
-  <li><a href="#featured-projects" id="toc-featured-projects" class="nav-link" data-scroll-target="#featured-projects">Featured Projects</a></li>
+  <li><a href="#논문-정보" id="toc-논문-정보" class="nav-link active" data-scroll-target="#논문-정보">논문 정보</a></li>
+  <li><a href="#짧은-생각" id="toc-짧은-생각" class="nav-link" data-scroll-target="#짧은-생각">짧은 생각</a>
+  <ul class="collapse">
+  <li><a href="#블랙-숄즈-모형의-적용과-난제" id="toc-블랙-숄즈-모형의-적용과-난제" class="nav-link" data-scroll-target="#블랙-숄즈-모형의-적용과-난제">블랙-숄즈 모형의 적용과 난제</a></li>
+  </ul></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">논문 리뷰: THE VALUATION OF PATENTS</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">가치평가</div>
+    <div class="quarto-category">특허</div>
+    <div class="quarto-category">실물옵션</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    특허 가치 평가에 대한 실물 옵션 접근법을 다룬 논문을 리뷰하고, 블랙-숄즈 모형 적용의 가능성과 한계를 살펴봅니다.
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>이성재 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 28, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
-<p><br></p>
-<section id="precision-engineered-전세계의-출원된-특허-중-오직-극소수만이-300만달러-이상의-가치를-지니며-그외의-특허는-롱테일-분포에-위치해-사실상-죽은-특허와-다름-아닙니다.-정밀하게-설계된-특허데이터-분석으로-노이즈-속에서-진정한-가치를-모색합니다." class="level3 container text-center">
-<h3 class="anchored" data-anchor-id="precision-engineered-전세계의-출원된-특허-중-오직-극소수만이-300만달러-이상의-가치를-지니며-그외의-특허는-롱테일-분포에-위치해-사실상-죽은-특허와-다름-아닙니다.-정밀하게-설계된-특허데이터-분석으로-노이즈-속에서-진정한-가치를-모색합니다.">Precision-Engineered<br><br>전세계의 출원된 특허 중 오직 극소수만이 300만달러 이상의 가치를 지니며 그외의 특허는 롱테일 분포에 위치해 사실상 죽은 특허와 다름 아닙니다. <br><br>정밀하게 설계된 특허데이터 분석으로 노이즈 속에서 진정한 가치를 모색합니다.</h3>
-<p><br></p>
-<p><a href="./projects.html" class="btn btn-light btn-lg" role="button"> <i class="bi bi-journal-code"></i> 프로젝트 보기 </a> <a href="./about.html" class="btn btn-outline-light btn-lg" role="button"> <i class="bi bi-person"></i> 소개 보기 </a></p>
-</section>
+
+<section id="논문-정보" class="level2">
+<h2 class="anchored" data-anchor-id="논문-정보">논문 정보</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p>THE VALUATION OF PATENTS - A review of patent valuation methods with consideration of option based methods and the potential for further research</p>
+</div><div class="column" style="width:30%;">
+<p><a href="./files/THE VALUATION OF PATENTS - A review of patent valuation methods with consideration of option based methods and the potential for further research.pdf" class="btn btn-primary btn-lg" role="button">논문 다운로드</a></p>
+</div>
+</div>
+<p><img src="paper_review_pic1.png" class="img-fluid" style="width:100.0%" alt="대표 이미지"></p>
 <hr>
-<section id="featured-projects" class="level2">
-<h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
-<p>핵심적인 데이터 분석 및 머신러닝 프로젝트입니다.</p>
-<div class="grid">
-<div class="g-col-12 g-col-md-6">
-<div class="card" title="따릉이 수요 예측 분석" data-image="Figure_1.png">
-<p>전방인용수와 같은 지표와 더불어 BERT 기반의 언어모델로 내재적 가치를 평가하는 머신러닝 모델 개발에 몰두하고 있습니다.</p>
-<p><a href="./24paper.html">자세히 보기 →</a></p>
-</div>
-</div>
-<div class="g-col-12 g-col-md-6">
-<div class="card" title="두 번째 프로젝트 (준비 중)" data-image="path/to/your/image2.png">
-<p>또한, 특허법이 산업현장을 온전히 담기 위해 나아가야할 방향에 대해 고민합니다.</p>
-<hr>
-<section id="skills-tools" class="level2">
-<h2 class="anchored" data-anchor-id="skills-tools">Skills &amp; Tools</h2>
-<p>데이터 분석을 위해 아래와 같은 기술 스택을 활용합니다.</p>
-<div class="grid">
-<div class="g-col-12 g-col-md-4">
-<p><strong>Languages</strong> <br> Python, R, SQL</p>
-</div>
-<div class="g-col-12 g-col-md-4">
-<p><strong>Libraries &amp; Frameworks</strong> <br> Pandas, Scikit-learn, PyTorch, Tidyverse</p>
-</div>
-<div class="g-col-12 g-col-md-4">
-<p><strong>Visualization &amp; BI</strong> <br> Matplotlib, Seaborn, Tableau</p>
-</div>
-</div>
-<hr>
 </section>
-<section id="connect" class="level2">
-<h2 class="anchored" data-anchor-id="connect">Connect</h2>
-<div style="font-size: 1.5em;">
-<p><a href="https://github.com/lsj4232" class="text-light me-3"><i class="bi bi-github"></i></a> <a href="https://www.linkedin.com/in/%EC%84%B1%EC%9E%AC-%EC%9D%B4-5b7a12375/" class="text-light me-3"><i class="bi bi-linkedin"></i></a> <a href="mailto:seongjae24@gmail.com" class="text-light"><i class="bi bi-envelope"></i></a></p>
-</div>
-<div class="profile-container">
-<p><img src="face.jpeg" alt="프로필 사진" class="profile-pic"></p>
-</div>
+<section id="짧은-생각" class="level2">
+<h2 class="anchored" data-anchor-id="짧은-생각">짧은 생각</h2>
+<p>전통적인 가치평가 방법은 특허의 가치를 평가히기에 부족하다고 한다. 그 이유는, <strong>경직성</strong>에 있다. 불확실성에 대응할 유연함이 부족하다는 이야기다.</p>
+<p>그래서 이러한 한계를 극복하기 위해, 이 논문은 다음과 같은 새로운 관점을 제안한다 .</p>
+<blockquote class="blockquote">
+<p>초기 특허권 취득 비용을 <strong>‘옵션’</strong>으로, 후기 특허권의 후속 투자 및 상업화 비용을 <strong>‘행사가격’</strong>으로 간주.</p>
+</blockquote>
+<p>흥미로운 이야기다. 옵션으로 보게 될 시 옵션가격 책정에 대한 대표적인 모형인 <strong>블랙 숄즈 모형</strong>을 활용해볼 수 있기 때문이다.</p>
+<p>하지만 저자가 지적하는 바와 같이,<br>
+각 변수를 어떻게 대응할지가 정말 어려운 이야기인것 같다.</p>
+<hr>
+<section id="블랙-숄즈-모형의-적용과-난제" class="level3">
+<h3 class="anchored" data-anchor-id="블랙-숄즈-모형의-적용과-난제">블랙-숄즈 모형의 적용과 난제</h3>
+<p>블랙 숄즈 모형에 등장하는 5가지 변수는</p>
+<p>현재 주가, 행사가격, 만기까지 남은 시간, 주가 수익률의 변동성, 무위험 이자율로 구성되는데</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">블랙-숄즈 변수</th>
+<th style="text-align: left;">특허 가치평가 대입</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>현재 주가</strong> (<span class="math inline">\(S\)</span>)</td>
+<td style="text-align: left;">발명 사업화에 따른 이익의 현재 가치</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>행사가격</strong> (<span class="math inline">\(K\)</span>)</td>
+<td style="text-align: left;">후속 투자 및 상업화 비용</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>만기까지 남은 시간</strong> (<span class="math inline">\(T\)</span>)</td>
+<td style="text-align: left;">특허권 소멸시까지 남은 기간</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>무위험 이자율</strong> (<span class="math inline">\(r\)</span>)</td>
+<td style="text-align: left;">무위험 이자율</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>주가 수익률의 변동성</strong> (<span class="math inline">\(\sigma\)</span>)</td>
+<td style="text-align: left;"><strong>?</strong></td>
+</tr>
+</tbody>
+</table>
+<p>현재 주가를 발명 사업화에 따른 이익 행사 가격을 후속 투자 및 상업화 비용 만기까지 남은 시간을 특허권 소멸시까지 남은 시간 무위험 이자율 = 무위험 이자율 로 정의할 수 있겠으나</p>
+<p><strong>주가 수익률의 변동성</strong>을 특허에 대해서는 어떻게 비유할지가 난제이다. 특허의 특성상 극소수의 특허만이 특출난 재정적 가치를 지니는 롱테일 분포를 이루기에, 주식에 그대로 대입하긴 어려운 사정들이 있다.</p>
 
 
 </section>
-</div>
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->

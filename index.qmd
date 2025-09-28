@@ -8,7 +8,7 @@ title-block-banner: true
 
 ::: {.container .text-center}
 
-### 데이터를 통해 문제의 본질을 탐색하고, 비즈니스 가치를 증명합니다.
+### Precision-Engineered<br><br>전세계의 출원된 특허 중 오직 극소수만이 300만달러 이상의 가치를 지니며 그외의 특허는 롱테일 분포에 위치해 사실상 죽은 특허와 다름 아닙니다. <br><br>정밀하게 설계된 특허데이터 분석으로 노이즈 속에서 진정한 가치를 모색합니다.
 <br>
 
 <a href="projects.qmd" class="btn btn-light btn-lg" role="button">
@@ -30,15 +30,15 @@ title-block-banner: true
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card title="따릉이 수요 예측 분석" image="Figure_1.png"}
-서울시 공공자전거 '따릉이'의 시간대별 수요를 예측하는 머신러닝 모델을 개발하여 효율적인 자전거 재배치 전략을 제안합니다.
+전방인용수와 같은 지표와 더불어 BERT 기반의 언어모델로 내재적 가치를 평가하는 머신러닝 모델 개발에 몰두하고 있습니다.
 
-[자세히 보기 &rarr;](my_first_project.qmd)
+[자세히 보기 &rarr;](24paper.qmd)
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card title="두 번째 프로젝트 (준비 중)" image="path/to/your/image2.png"}
-이곳에 두 번째 핵심 프로젝트에 대한 간략한 설명을 추가하세요. 고객 행동 분석, 매출 예측 등 매력적인 주제를 선정하는 것이 좋습니다.
+또한, 특허법이 산업현장을 온전히 담기 위해 나아가야할 방향에 대해 고민합니다.
 
 
 
@@ -75,4 +75,8 @@ title-block-banner: true
 <a href="https://github.com/lsj4232" class="text-light me-3"><i class="bi bi-github"></i></a>
 <a href="https://www.linkedin.com/in/%EC%84%B1%EC%9E%AC-%EC%9D%B4-5b7a12375/" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
 <a href="mailto:seongjae24@gmail.com" class="text-light"><i class="bi bi-envelope"></i></a>
+</div>
+
+<div class="profile-container">
+  <img src="face.jpeg" alt="프로필 사진" class="profile-pic">
 </div>

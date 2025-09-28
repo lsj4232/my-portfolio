@@ -1,7 +1,11 @@
 {
   "listingMap": {
     "projects.qmd": [
-      "my_first_project.qmd"
+      "my_first_project.qmd",
+      "24paper.qmd"
+    ],
+    "thoughts.qmd": [
+      "paper_review1.qmd"
     ]
   }
 }

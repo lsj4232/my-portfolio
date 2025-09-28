@@ -15,10 +15,11 @@ about:
       href: "mailto:seongjae24@gmail.com"
 ---
 
-## 안녕하세요, 데이터 분석가 이성재입니다.
+## 안녕하세요, 특허 가치 평가를 설계하는 <br> 이성재입니다.
 
-저는 데이터를 통해 문제 해결의 실마리를 찾는 것을 좋아합니다.
-특히 ~ 분야에 관심이 많으며, Python, R, SQL을 능숙하게 다룹니다.
+1) DATA - DRIVEN
+2) AI - POWERED
+3) PRESCION - ENGINEERED
 
 ### Skills
 

@@ -1,9 +1,10 @@
 ---
-title: "Projects"
+title: "Thoughts"
 listing:
   contents: 
-    - "my_first_project.qmd"
-    - "24paper.qmd"
+
+    - "paper_review1.qmd"
+    
   type: grid # 카드 형태 (default, grid, table 중 선택)
   sort: "date desc"
   categories: true
